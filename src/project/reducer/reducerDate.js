@@ -49,12 +49,12 @@ export  default function reducerDate (state = initialState , action) {
         if(action.category === "0" ) {
             return {
                 ...state,
-                devices: [...state.devices_copy],
+                devices: [...state.devices_copy]
             };
         } else {
             return {
                 ...state,
-                devices: state.devices_copy.filter(item => item.categoryId === action.category),
+                devices: state.devices_copy.filter(item => item.categoryId === action.category)
 
             };
         }
@@ -69,8 +69,9 @@ export  default function reducerDate (state = initialState , action) {
         });
         return {
             ...state,
-
-    }  }else if (action.type === 'FIND_DEVICES_INPUT') {
+            arr_categories: [...arr]
+        }
+    } else if (action.type === 'FIND_DEVICES_INPUT') {
         let search_name = action.search_name.toLowerCase();
         if(search_name){
             return {

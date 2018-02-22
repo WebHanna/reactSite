@@ -603,6 +603,9 @@ footer {
      text-decoration: none;
     outline: -webkit-focus-ring-color auto 0px !important;
 }
+a:focus, a:hover {
+    text-decoration: none !important;
+}
 @media only screen and (max-width : 992px){
     .center{
     text-align: center;
